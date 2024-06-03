@@ -1,0 +1,49 @@
+<!-- this is the home page of project -->
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: orange;
+      color: black;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav li {
+      margin-right: 20px;
+    }
+    .content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href= "/">HOME</a></li>
+      <li><a href= "{% url 'doctor_register' %}">DOCTOR REGISTRATION</a></li>
+      <li><a href= "{% url 'patient_register' %}">PATIENT REGISTRATION</a></li>
+      <li><a href= "{% url 'login' %}">LOGIN</a></li>
+      <li><a href= "{% url 'aboutus' %}">About Us</a></li>
+      <li><a href= "{% url 'contactus' %}">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <h1>Welcome to Online Doctor</h1>
+    <p>Book your Doctor fast and easily.</p>
+    <!-- Your content goes here -->
+  </div>
+</body>
+</html>
+ 

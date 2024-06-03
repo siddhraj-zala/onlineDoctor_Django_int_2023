@@ -1,0 +1,11 @@
+<head>
+    <title>login</title>
+</head>
+{% load crispy_forms_tags %}
+
+    <form method = "POST">
+        {% csrf_token %}
+        <!--{{form.as_p}}-->
+        {{form|crispy}}
+        <input type="submit" value="Login">
+    </form>
